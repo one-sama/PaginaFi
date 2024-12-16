@@ -1,0 +1,202 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 2, 111);
+    text-align: center;
+}
+
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    
+    position: sticky;
+    top: 0px;
+    height: 115px;
+    color: rgb(203, 0, 248);
+    background-color: rgb(149, 44, 176);
+    
+}
+
+.laterales {
+    padding: 20px;
+    text-align: center;
+    color: rgb(185, 64, 218);
+    width: 10%;
+    background-color: rgb(118, 0, 154);
+    box-sizing: border-box;
+}
+
+
+
+main {
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 2em;
+    color: rgba(69, 10, 80, 0.733);
+    background-color: rgba(173, 0, 199, 0.731);
+    box-sizing: border-box;
+}
+
+footer {
+   
+    height: 195px;
+    float: none;
+    background-color: rgb(165, 2, 190);
+    color: black;
+   
+}
+
+#volver img {
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    margin-left: 35px;
+    margin-top: 5px;
+
+}
+
+#volver img:hover {
+    width: 105px;
+    height: 105px;
+}
+
+
+#enlace img {
+
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.redes img {
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.redes {
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+#siguiente img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1.4fr 1.1fr; 
+    grid-template-rows: 0.3fr 1.7fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "sonido1 sonido2 sonido3"
+      ". . ."; 
+  }
+  .sonido1 {
+    display: grid; 
+    padding-left:  150px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      
+      ". . ."
+      ". . ."; 
+    grid-area: sonido1; 
+  }
+  .sonido2 { display: grid; 
+   padding-left:  200px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+    grid-area: sonido2;  }
+  .sonido3 {  display: grid; 
+    padding-left: 150px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+    grid-area: sonido3;  }
+
+    .botonV {
+        background-color: #8904aa;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+#agradecimientos{
+color: black;
+}
+
+
+#fantasmas img:hover {
+
+    content: url(imagenes/alt17.jpg);
+
+}
+
+#enlace img:hover {
+
+    content: url(imagenes/alt16.jpg);
+
+}
+
+#siguiente img:hover {
+
+    content: url(imagenes/alt10.png);
+
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+  
+        height: 175px;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer {
+  
+        height: 195x;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer {
+  
+        height: 250px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer {
+  
+        height: 300px;
+    }
+}
